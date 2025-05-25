@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #2a9dbf;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header h1 span {
+  color: black;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.title-box {
+  background-color: #b9efff;
+  margin: 1.5rem 0;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  border: 4px solid black;
+  text-align: center;
+}
+
+.title-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.button-grid {
+  margin-top:90px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.button-grid button {
+  background-color: #b9efff;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight:bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-grid button:hover {
+  background-color: #a0dce8;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3.8rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .title-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem;
+  }
+}
